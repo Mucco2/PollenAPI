@@ -1,0 +1,25 @@
+/* Generel stil for siden og skrifttype */
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --- Farvekoder for pollen-niveauer --- */
+
+/* Definerer farver for venstre kant af kortene */
+.pollen-card.low { border-left-color: #34D399; }        /* Grøn */
+.pollen-card.moderate { border-left-color: #FBBF24; }   /* Gul */
+.pollen-card.high { border-left-color: #F97316; }       /* Orange */
+.pollen-card.very-high { border-left-color: #EF4444; }  /* Rød */
+
+/* Definerer tekstfarver til tallet i cirklen */
+.text-low { color: #34D399; }
+.text-moderate { color: #FBBF24; }
+.text-high { color: #F97316; }
+.text-very-high { color: #EF4444; }
+
+/* Farve til fejlmeddelelse */
+#error-message {
+    color: #EF4444;
+}

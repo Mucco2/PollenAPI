@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dagens Pollental</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 sm:p-6 md:p-8 max-w-2xl">
+        
+        <header class="text-center mb-6">
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">Dagens Pollental</h1>
+            <p id="location-date" class="text-lg text-gray-600 mt-1">Henter data...</p>
+        </header>
+
+        <div id="legend" class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mb-8 text-sm text-gray-700">
+            <div class="flex items-center"><span class="h-3 w-3 rounded-full mr-2" style="background-color: #34D399;"></span>Low</div>
+            <div class="flex items-center"><span class="h-3 w-3 rounded-full mr-2" style="background-color: #FBBF24;"></span>Moderate</div>
+            <div class="flex items-center"><span class="h-3 w-3 rounded-full mr-2" style="background-color: #F97316;"></span>High</div>
+            <div class="flex items-center"><span class="h-3 w-3 rounded-full mr-2" style="background-color: #EF4444;"></span>Very High</div>
+        </div>
+
+        <main id="pollen-cards-container" class="space-y-4">
+            <p id="error-message" class="text-center font-semibold"></p>
+        </main>
+
+        <footer class="text-center mt-8 text-sm text-gray-500">
+            <p>Data leveret via Open-Meteo API.</p>
+        </footer>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
